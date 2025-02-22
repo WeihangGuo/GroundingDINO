@@ -1,3 +1,11 @@
+**CUDA 12+ has compatibility issues with PyTorch 2.6.0. PyTorch 2.5.1 has no such problem.**
+```
+pip uninstall torch torchvision torchaudio
+# If cuda 12.1
+pip install torch==2.5.1+cu121 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+https://github.com/IDEA-Research/GroundingDINO/issues/377 
+
 <div align="center">
   <img src="./.asset/grounding_dino_logo.png" width="30%">
 </div>
